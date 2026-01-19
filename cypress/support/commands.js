@@ -7,7 +7,6 @@ Cypress.Commands.add('validaTitulo',(titulo) =>{
 
 Cypress.Commands.add('login', (login, senha) => {
 
-  // ===== USERNAME (select digitável) =====
   cy.contains('Select Username').click()
 
   if (login) {
@@ -16,11 +15,10 @@ Cypress.Commands.add('login', (login, senha) => {
       .clear()
       .type(`${login}{enter}`)
   } else {
-    // fecha e limpa estado interno
+
     cy.focused().type('{esc}')
   }
 
-  // ===== PASSWORD =====
   cy.contains('Select Password').click()
 
   if (senha) {
@@ -42,8 +40,6 @@ Cypress.Commands.add('validaTexto',(texto)=>{
 Cypress.Commands.add('logout',()=>{
     cy.contains('Logout').click()
 })
-
-/////////////////////////////
 
 Cypress.Commands.add('ordenaPreco', (ordenaPreco)=>{
     cy.get('select').select(ordenaPreco)
