@@ -1,0 +1,51 @@
+# =========================
+# Dependências
+# =========================
+node_modules/
+
+# =========================
+# Cypress (artefatos gerados)
+# =========================
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# =========================
+# Logs
+# =========================
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# Ambiente / variáveis
+# =========================
+.env
+.env.local
+.env.*.local
+
+# =========================
+# Sistema operacional
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Editor / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Cache / build
+# =========================
+.cache/
+dist/
+build/
+
+# =========================
+# Outros
+# =========================
+coverage/
